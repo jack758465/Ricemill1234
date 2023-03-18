@@ -1,0 +1,191 @@
+
+.humm>li:nth-child(1){
+	
+	width:65px}
+	
+	
+	
+	.humm>li:nth-child(1) a{
+		
+		padding-left:10px
+	}
+
+.humm>li:nth-child(2) {
+    width:72px;
+	text-align:center
+}
+.humm>li:nth-child(3) {
+    width:90px;
+	text-align:center
+}
+.humm>li:nth-child(4) {
+    width:130px;
+	text-align:center
+}
+.humm>li:nth-child(5) {
+    width:100px;
+	text-align:center
+}
+
+
+.tumm>li:nth-child(1) {
+    width:84px;
+	text-align:center
+}
+.tumm>li:nth-child(2) {
+    width:100px;
+	text-align:center
+}
+.tumm>li:nth-child(3) {
+    width:120px;
+	text-align:center
+}
+.tumm>li:nth-child(4) {
+    width:100px;
+	text-align:center
+}
+.tumm>li:nth-child(5) {
+    width:94px;
+	text-align:center
+}
+
+
+.humm>li:nth-child(1):hover {
+    background: url(../images/hoac.png) no-repeat;
+    background-position: center;
+}
+
+
+.humm>li:nth-child(2):hover {
+    background: url(../images/ho6.png) no-repeat;
+    background-position: center;
+}
+
+.humm>li:nth-child(3):hover {
+    background: url(../images/ho7.png) no-repeat;
+    background-position: center;
+}
+
+
+.humm>li:nth-child(4):hover {
+    background: url(../images/ho2.png) no-repeat;
+    background-position: center;
+}
+
+.humm>li:nth-child(5):hover {
+    background: url(../images/ho5.png) no-repeat;
+    background-position: center;
+}
+
+
+.tumm>li:nth-child(1):hover {
+    background: url(../images/ho1.png) no-repeat;
+    background-position: center;
+}
+.tumm>li:nth-child(2):hover {
+    background: url(../images/ho5.png) no-repeat;
+    background-position: center;
+}
+.tumm>li:nth-child(3):hover {
+    background: url(../images/ho4.png) no-repeat;
+    background-position: center;
+}
+.tumm>li:nth-child(4):hover {
+    background: url(../images/ho1.png) no-repeat;
+    background-position: center;
+}
+.tumm>li:nth-child(5):hover {
+    background: url(../images/ho1.png) no-repeat;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 414px) and (max-width: 600px){
+.navbar .logo {
+    float: left;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    /* margin-top: -68px; */
+    position: absolute;
+    left: 5%;
+    top: -23px;
+    z-index: 12;
+    width: 34% !important;
+}
+}
+
+@media (min-width: 992px) and (max-width: 2000px) {
+	
+	.menu-item ul.sub-menu,
+.primary-menu li ul{
+	display: flex;
+  margin: 0;
+  min-width: 215px;
+  position: absolute;
+  text-align: left;
+  top: 42px !important;
+  z-index: -1;
+  background: #fff;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.27);
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  border-radius:10px
+}
+.menu-item:hover > ul.sub-menu,
+.primary-menu li:hover > ul.sub-menu{
+  top: 63px;
+  opacity: 1;
+  z-index: 10;
+  visibility: visible;
+}
+	
+	
+	.nav>li a span{
+	display:none;
+}
+  .hidden-md {
+    display: none !important;
+  }
+}
+
+/*# sourceMappingURL=bootstrap.css.map */
+
+.nav>li a {
+    position: relative;
+    display: block;
+    background-position: center;
+    background: url(../images/line.png) no-repeat;
+    background-position: left;
+}
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+
+@media (min-width: 768px) {
+  .lead {
+    font-size: 21px;
+  }
+}

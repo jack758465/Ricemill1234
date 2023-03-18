@@ -1,0 +1,928 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <link rel="shortcut icon" href="images/ff.png" />
+    <title>MAXIL | Deals in Every type of Rice.</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="css/woocommerce-layout.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="css/woocommerce-smallscreen.css" type="text/css" media="only screen and (max-width: 768px)"/>
+    <link rel="stylesheet" href="css/woocommerce.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="css/woocommerce(1).css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="css/js_composer.min.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="css/new.css"/>
+    <link rel="stylesheet" href="css/pp.css"/>
+    <link rel="stylesheet" href="css/theme.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lusitana" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="css2/nivo-slider.css">
+    <link rel="stylesheet" href="css2/main.css">
+    <link rel="stylesheet" href="css2/color/default.css">
+    <style>
+        .error {
+            border: solid 1px #FF0000 !important;
+            -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        .showerror {
+            border: solid 1px #FF0000 !important;
+            -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        @-webkit-keyframes shake {
+            0%, 100% {
+                -webkit-transform: translateX(0);
+            }
+
+            10%, 30%, 50%, 70%, 90% {
+                -webkit-transform: translateX(-3px);
+            }
+
+            20%, 40%, 60%, 80% {
+                -webkit-transform: translateX(3px);
+            }
+        }
+
+        @keyframes shake {
+            0%, 100% {
+                transform: translateX(0);
+            }
+
+            10%, 30%, 50%, 70%, 90% {
+                transform: translateX(-3px);
+            }
+
+            20%, 40%, 60%, 80% {
+                transform: translateX(3px);
+            }
+        }
+
+        .shake {
+            -webkit-animation-name: shake;
+            animation-name: shake;
+        }
+
+        .goog-te-gadget-simple {
+            border: 0px !important;
+            box-shadow: 0px 1px 2px rgba(6, 28, 113, 0.29);
+            height: 30px;
+        }
+        .outer_prod {
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px 0 0;
+    border: 1px solid #ccc;
+}
+        .outer_prod figure {
+    width: 100%;
+    height: 260px;
+    position: relative;
+}
+        .outer_prod figure img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-height: 100%;
+}
+.outer_prod:hover .pro_btn {
+    transition: all .5s ease;
+    border-radius: 0 20px;
+}
+.pro_btn:hover {
+    color: #fff;
+}
+.btn_common, .btn_common:hover, .outer_box, .outer_box:hover, .outer_box:hover i, .pro_btn, .pro_btn:hover {
+    transition: all .5s ease;
+}
+.pro_btn {
+    border: 1px solid #083580;
+    background-color: #083580;
+}
+.pro_btn:hover {
+    background-color: #083580;
+    border: 1px solid #083580;
+}
+.pro_btn {
+    color: #fff;
+}
+.pro_btn {
+    position: absolute;
+    padding: 5px 14px;
+    font-size: 14px;
+    border-radius: 10px 0;
+    margin: 0px 0;
+    width: auto;
+    left: 50%;
+    bottom: 15%;
+    top: unset;
+    transform: translate(-50%);
+    z-index: 99;
+}
+.outer_prod h1, .pro_btn {
+    white-space: nowrap;
+    text-transform: capitalize;
+}
+.img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.outer_prod h2, .outer_prod h3 {
+    color: #333;
+}
+
+.outer_prod h3 {
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin: 0;
+}
+.outer_prod h2, .outer_prod h3 {
+    color: #333;
+}
+h3 {
+    line-height: 28px;
+}
+.outer_prod h2, .outer_prod h3 {
+    white-space: nowrap;
+    padding: 25px 10px 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+    </style>
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div id="site-wrapper">
+            <header id="">
+                <div class="nav-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul>
+                                    <li style="border-right: 1px solid #e0ac3c;"><i class="fa fa-phone"></i>+91 8295460011, +91 8295490011</li>
+                                    <li style=""><a href="mailto:omsaioverseas2020@gmail.com"><i class="fa fa-envelope"></i>maxilagro@gmail.com</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul>
+                                    <li style="float: right;">
+                                       <div class="top-language">
+                                            <div id="google_translate_element"></div>
+                                            <script type="text/javascript">
+                                                function googleTranslateElementInit() {
+                                                    new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+                                                }
+                                            </script>
+                                            <script type="text/javascript" src="js/element.js"></script>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gra">
+                    <div class="navbar">
+                        <div class="container no-padds">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <a href="Default.aspx" title="" class="logo">
+                                        <img src="images/logo.png"></a>
+                                    <button data-target=".navbar-collapse" data-toggle="collapse" type="button" class="menu-mobile visible-xs">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <div class="menu-primary-container">
+                                        <ul class="nav navbar-nav navbar-collapse collapse humm left-menu">
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item"><a href="Default.aspx">&nbsp; Home &nbsp;</a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page about-click">
+                                                <a href="about-us.aspx">About</a>
+                                                
+                                            </li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page infra-click">
+                                                <a href="infrastructure.aspx">Infrastructure</a>
+                                               
+                                            </li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page infra-click">
+                                                <a href="certificates.aspx">Certificates</a>
+                                               
+                                            </li>
+                                        </ul>
+                                        <ul class="nav navbar-nav navbar-collapse collapse tumm right-menu">
+                                           
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page  "><a href="brands.aspx">Brands</a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page  "><a href="products.aspx">Products</a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page  "><a href="product-query.aspx">Product Query</a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page  "><a href="contact.aspx">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--mobile navigation-->
+                <!--mobile nav end-->
+            </header>
+
+
+
+            <!-- Home  Start-->
+
+
+                  <div class="clearfix"></div>
+        <div id="post-519" class="post-519 page type-page status-publish hentry">
+            <div id="banner">
+                <div class="slider-wrapper">
+                    <div class="nivoSlider">
+                        <img src="images2/slider-1.jpg" alt="" title="" />
+                        <img src="images2/slider-2.jpg" alt="" title="" />
+                        <img src="images2/infra1.png" alt="" title="" />
+                        <img src="images2/slider-8.jpg" alt="" title="" />
+                    </div>
+                    <div id="nivoCaption-1" class="nivo-html-caption">
+                        <div class="nivo-caption-img-1 animated animation-delay-50" data-animate="fadeInUp">
+                            <img alt="" src="images2/img-2.png">
+                        </div>
+                    </div>
+                    <div id="nivoCaption-2" class="nivo-html-caption">
+                        <div class="nivo-caption-img-2 hum2 animated animation-delay-50" data-animate="fadeInUp">
+                            <img alt="" src="images2/img-4.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <div class="vc_row wpb_row vc_row-fluid">
+                <div class="wpb_column vc_column_container vc_col-sm-12">
+                    <div class="vc_column-inner ">
+                        <div class="wpb_wrapper">
+                            <section id="special-offers" class="padd-top-30">
+                                <div class="container">
+                                    <div class="row">
+                                       
+                                        <div class="col-md-12" style="text-align: center">
+                                            <div class="">
+                                                <img src="images/heading-border.png" class="">
+                                                <h2 class="section-suptitle bounceInDown center animated" style="visibility: visible; animation-name: bounceInDown;">
+                                                    <span class="">About Us</span></h2>
+                                                <h1 class="section-title zoomIn animated animated" style="visibility: visible; animation-name: zoomIn;"><span>Maxil Agro Industries</span></h1>
+                                                <img src="images/heading-1.png">
+                                                <div class=" wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                                                    <div>
+                                                        <p>
+                                                          Maxil Agro Industries is world’s renowned Manufacturer & Exporter of Basmati & Non-Basmati Rice from District Karnal, State Haryana in Country India. Our factory and processing unit established in the year 2009 in City Taraori of District Karnal, Haryana (India). We are engaged in Milling, Processing & Supplying of superior and finest, export quality Basmati Rice in the form of Creamy Sella / White Sella (Parboiled Rice), Golden Sella, Steam & Raw of all varieties to all across the globe. Maxil Agro Industries is a USFDA and SFDA certified manufacturing unit having ISO 9001:2015, ISO 22000:2018, HACCP, GMP, HALAL, KOSHER & FSSAI certifications as well in production & supply, which ensures the high-quality products to our clients.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <ul class="welcome-feature padd-10">
+                                                    <li class=" wow fadeInLeft animated animated animated" data-wow-duration="0.2s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 0.2s; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                                        <div class="welcome-iconbox">
+                                                            <div class="content">
+                                                                <img src="images/experience.png">
+                                                                <div class="details">
+                                                                    <a href="#">Experience</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class=" wow fadeInLeft animated animated animated" data-wow-duration="0.4s" data-wow-delay="0.4s" style="visibility: visible; animation-duration: 0.4s; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                                                        <div class="welcome-iconbox">
+                                                            <div class="content">
+                                                                <img src="images/trusted.png">
+                                                                <div class="details">
+                                                                    <a href="#">Trusted</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class=" wow fadeInLeft animated animated animated" data-wow-duration="0.6s" data-wow-delay="0.6s" style="visibility: visible; animation-duration: 0.6s; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                                                        <div class="welcome-iconbox">
+                                                            <div class="content">
+                                                                <img src="images/quality.png">
+                                                                <div class="details">
+                                                                    <a href="#">Quality</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class=" wow fadeInLeft animated animated animated" data-wow-duration="0.8s" data-wow-delay="0.8s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                                                        <div class="welcome-iconbox">
+                                                            <div class="content">
+                                                                <img src="images/team.png">
+                                                                <div class="details">
+                                                                    <a href="#">Team</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <p style="margin-top: 10px;">
+                                                    <a href="about-us.aspx" class="btn2">About Us </a>
+                                                    <br />
+                                                    <img src="images/button.png" style="margin-top: 7px">
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section id="reservation" class="parallax-bg fx-bg">
+                <div class="container">
+                    <div class="row padd-top-30 padd-bottom-50 " style="text-align: center">
+                        <img src="images/heading-border.png" class="">
+                        <h2 class="section-suptitle text-center wow bounceInDown center animated" style="visibility: visible; animation-name: bounceInDown;"><span>Fresh And Pure</span>
+                        </h2>
+                        <h1 class="section-title text-center wow zoomIn animated animated" style="visibility: visible; animation-name: zoomIn; color: #fff">
+                            <span>Featured Products</span>
+                        </h1>
+                        <img src="images/heading-2.png">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner imageGallery1 wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;" role="listbox">
+                                <div class="item active">
+                                    <div class="col-md-4 col-sm-4">
+                                        <div class="sepcial-product wrap style-1">
+                                            <div class="sepcial-product-img nh-hover">
+                                                <img src="images/open1.jpg" alt="">
+                                                <div class="overlay">
+                                                    <a href="images/open1.jpg" class="btn sm green item" title=""><i class="fa fa-search" aria-hidden="true"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="sepcial-product-detail">
+                                                <img src="images/pro.jpg">
+                                                <h1>Steam Rice</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4">
+                                        <div class="sepcial-product wrap style-1">
+                                            <div class="sepcial-product-img nh-hover">
+                                                <img src="images/open2.jpg" alt="">
+                                                <div class="overlay">
+                                                    <a href="images/open2.jpg" class="btn sm green item" title=""><i class="fa fa-search" aria-hidden="true"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="sepcial-product-detail">
+                                                <img src="images/pro.jpg">
+                                                <h1>Sella Rice</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4">
+                                        <div class="sepcial-product wrap style-1">
+                                            <div class="sepcial-product-img nh-hover">
+                                                <img src="images/open3.jpg" alt="">
+                                                <div class="overlay">
+                                                    <a href="images/open3.jpg" class="btn sm green item" title=""><i class="fa fa-search" aria-hidden="true"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="sepcial-product-detail">
+                                                <img src="images/pro.jpg">
+                                                <h1>Brown Rice</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-md-4 col-sm-4">
+                                        <div class="sepcial-product wrap style-1">
+                                            <div class="sepcial-product-img nh-hover">
+                                                <img src="images/rice1.jpg" alt="">
+                                                <div class="overlay">
+                                                    <a href="images/rice1.jpg" class="btn sm green item" title=""><i class="fa fa-search" aria-hidden="true"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="sepcial-product-detail">
+                                                <img src="images/pro.jpg">
+                                                <h1>Raw Basmati Rice</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4">
+                                        <div class="sepcial-product wrap style-1">
+                                            <div class="sepcial-product-img nh-hover">
+                                                <img src="images/rice2.jpg" alt="">
+                                                <div class="overlay">
+                                                    <a href="images/rice2.jpg" class="btn sm green item" title=""><i class="fa fa-search" aria-hidden="true"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="sepcial-product-detail">
+                                                <img src="images/pro.jpg">
+                                                <h1>Organic Rice</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4">
+                                        <div class="sepcial-product wrap style-1">
+                                            <div class="sepcial-product-img nh-hover">
+                                                <img src="images/rice3.jpg" alt="">
+                                                <div class="overlay">
+                                                    <a href="images/rice3.jpg" class="btn sm green item" title=""><i class="fa fa-search" aria-hidden="true"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="sepcial-product-detail">
+                                                <img src="images/pro.jpg">
+                                                <h1>Basmati Rice</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="vc_row wpb_row vc_row-fluid">
+                <div class="wpb_column vc_column_container vc_col-sm-12">
+                    <div class="vc_column-inner ">
+                        <div class="wpb_wrapper">
+                            <section id="delas" style="background: url(images/02-2-3.jpg) center top no-repeat;" class="padd-30">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12" style="text-align: center">
+                                            <img src="images/heading-border.png">
+                                            <h2 class="section-suptitle text-center wow bounceInDown center animated" style="visibility: visible; animation-name: bounceInDown;">
+                                                <span class="">Our Recipe</span></h2>
+                                            <h1 class="section-title text-center wow zoomIn animated animated" style="visibility: visible; animation-name: zoomIn;"><span>Today Special Dishes</span></h1>
+                                            <img src="images/heading-1.png">
+                                            <div class="">
+                                                <div class=" col-md-4 col-sm-4 delas-item hum wow fadeInUp animated animated" style="visibility: visible; animation-name: fadeInUp;">
+                                                    <img src="images/01-3-2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" /><h1>Hyderabadi Biryani </h1>
+                                                    <p>Since the inception of our firm, we are focused towards maintaining the trust..</p>
+                                                    <span><a href="recipe.html">Read More</a></span></div>
+                                                <div class="col-md-4 col-sm-4 delas-item hum wow fadeInUp animated animated" style="visibility: visible; animation-name: fadeInUp;">
+                                                    <img src="images/01-3-4.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" /><h1>Persian Steamed (Chelo)</h1>
+                                                    <p>Chelo cooks very quickly. Therefore, when we make Chelo, We always make sure...</p>
+                                                    <span><a href="recipe.html">Read More</a></span></div>
+                                                <div class="col-md-4 col-sm-4 delas-item hum wow fadeInUp animated animated" style="visibility: visible; animation-name: fadeInUp;">
+                                                    <img src="images/01-3-3.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" /><h1>Sweet Rice Pilaf Recipe</h1>
+                                                   <p>Rice pilaf with dried fruit is a popular Azerbaijani dish, which is thought...</p>
+                                                    <span><a href="recipe.html">Read More</a></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 10px">
+                <img src="images/pattern.jpg">
+            </div>
+            <div class="vc_row wpb_row vc_row-fluid">
+                <div class="wpb_column vc_column_container vc_col-sm-12">
+                    <div class="vc_column-inner ">
+                        <div class="wpb_wrapper ">
+                            <section id="Section1" class="delas" style="background: #f9f9f9">
+                                <div class="container padd-top-10">
+                                    <div class="row">
+                                        <div class="padd-20">
+                                            <div class="col-md-6 col-sm-12 variety2 ">
+                                                <div class="gg">
+                                                    <div class="text-center bax">
+                                                        <h1 class="section-title2 wow zoomIn animated animated animated text-center" style="visibility: visible; animation-name: zoomIn;"><span>Variety Of Rice</span></h1>
+                                                        <img src="images/heading-1.png" class="padd-bot-20">
+                                                    </div>
+                                                    <marquee direction="up" scrollamount="2" onmouseover="this . stop();" onmouseout="this . start();" class="mqsa wow fadeInUp animated mrq-ht" style="position: relative; z-index: 99; visibility: visible; animation-name: fadeInUp;">
+            <h1 class="ss">Basmati Rice</h1>
+      <div class="description2">
+      <ul>
+            <li>(i) 1121 Basmati Rice</li>
+            <li>(ii) Pusa Basmati Rice</li>
+            <li>(iii) Traditional Basmati Rice</li>
+            <li>(iv) 1401 Basmati Rice</li>
+            <li>(v) Sugandha Basmati Rice</li>
+            </ul>
+      </div>
+            <h1 class="ss">Non Basmati Rice</h1>
+      <div class="description2">
+      <ul>
+            <li>(i) Sharbati Non-Basmati Rice</li>
+            <li>(ii) PR-11 Non-Basmati Rice</li>
+            <li>(iii) IR-64 Non-Basmati Rice</li>
+            <li>(iv)  Sona Masuri Non Basmati Rice</li>
+            <li>(v) Jeerakasala Rice</li>
+           
+            </ul>
+      </div>
+            <h1 class="ss">Brown Rice</h1>
+      <div class="description2">
+      <ul>
+            <li>Indian Origin Traditional Brown</li>
+            <li>Indian Origin Pusa Brown</li>
+            </ul>
+      </div>
+            </marquee>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-6 col-sm-12 pro-banner ">
+                                                
+                                                        <img src="images/pro-all-banner1.jpg" class=" padd-top-20 padd-bot-20" />
+                                                    
+                                              
+                                            </div>
+                                            <div class="col-md-12 col-sm-12 ">
+                                                <h1 class="section-title2 padd-top-10 wow zoomIn animated animated animated" style="visibility: visible; animation-name: zoomIn;"><span>Our Certification </span></h1>
+                                                <img src="images/bg-title1.png">
+                                                <div class="clearfix"></div>
+                                                <div class="padd-30">
+                                                    <div class=" col-sm-6 col-xs-6  first padd-bot-20">
+                                                        <div class="img-border">
+                                                            <img src="images/certi1.jpg" class="img-responsive ba" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class=" col-sm-6 col-xs-6  first padd-bot-20">
+                                                        <div class="img-border">
+                                                            <img src="images/certi2.jpg" class="img-responsive ba" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class=" col-sm-6 col-xs-6  first padd-bot-20">
+                                                        <div class="img-border">
+                                                            <img src="images/certi3.jpg" class="img-responsive ba" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class=" col-sm-6 col-xs-6  first">
+                                                        <div class="img-border">
+                                                            <img src="images/certi4.jpg" class="img-responsive ba" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="zig">&nbsp;</div>
+            <section id="services" class="section services" style="">
+                <div class="container">
+                    <ul id="services-item">
+                        <li class="service">
+                            <aside>
+                                <div class="service-inner">
+                                    <h1>
+                                        <a href="Default.aspx" title="Carbs">Carbs</a>
+                                    </h1>
+                                    <p>Carbs in rice are mainly in the form of starch, accounting for up to 90% of the total dry weight.</p>
+                                </div>
+                            </aside>
+                            <em class="animated animation infinite bullets animation-delay-50"></em>
+                        </li>
+                        <li class="service">
+                            <aside>
+                                <div class="service-inner">
+                                    <h1>
+                                        <a href="Default.aspx" title="Fiber">Fiber</a>
+                                    </h1>
+                                    <p>The bran is mainly composed of insoluble fibers, such as hemicellulose, and contains virtually no soluble fiber.</p>
+                                </div>
+                            </aside>
+                            <em class="animated animation infinite bullets animation-delay-50"></em>
+                        </li>
+                        <li class="service">
+                            <aside>
+                                <div class="service-inner">
+                                    <h1>
+                                        <a href="Default.aspx">Vitamins</a>
+                                    </h1>
+                                    <p>Many vitamins and minerals are concentrated in the bran and germ, which are components of  rice.</p>
+                                </div>
+                            </aside>
+                            <em class="animated animation infinite bullets animation-delay-100"></em>
+                        </li>
+                        <li class="service">
+                            <aside>
+                                <div class="service-inner">
+                                    <h1>
+                                        <a href="Default.aspx">Plant Compound</a>
+                                    </h1>
+                                    <p>A number of plant compounds are found in rice, which are linked with potential health benefits.</p>
+                                </div>
+                            </aside>
+                            <em class="animated animation infinite bullets animation-delay-150"></em>
+                        </li>
+                        <li class="service">
+                            <aside>
+                                <div class="service-inner">
+                                    <h1>
+                                        <a href="Default.aspx">Copper</a>
+                                    </h1>
+                                    <p>Often found in whole grains, copper is low in the Western diet. Poor copper status may have adverse effects on heart health.</p>
+                                </div>
+                            </aside>
+                            <em class="animated animation infinite bullets animation-delay-200"></em>
+                        </li>
+                        <li class="service">
+                            <aside>
+                                <div class="service-inner">
+                                    <h1>
+                                        <a href="Default.aspx">Niacin</a>
+                                    </h1>
+                                    <p>Also known as vitamin B3, niacin in rice is mostly in the form of nicotinic acid. </p>
+                                </div>
+                            </aside>
+                            <em class="animated animation infinite bullets animation-delay-250"></em>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <div class="net">
+                <img src="images/network-border.png">
+            </div>
+            <section id="restaurant-menu">
+                <div class="container">
+                    <div class="row padd-20">
+                        <div class="overlay2">
+                            <div class="col-md-9 sep">
+                                <marquee scrollamount="2" onmouseover="this . stop();" onmouseout="this . start();" class="mqsa wow fadeInUp animated" style="position: relative; z-index: 99; visibility: visible; animation-name: fadeInUp;">
+            <img src="products/network/network_images_22_06_17_12_39_10_112966.png"/> 
+            <img src="products/network/network_images_22_06_17_12_39_44_119062.png"/> 
+            <img src="products/network/network_images_22_06_17_12_39_37_117605.png"/> 
+            <img src="products/network/network_images_22_06_17_12_39_48_101285.png"/> 
+            <img src="products/network/network_images_22_06_17_12_38_19_122227.png"/> 
+            <img src="products/network/network_images_22_06_17_12_39_15_107348.png"/> 
+            <img src="products/network/network_images_22_06_17_12_37_49_98792.png"/> 
+            <img src="products/network/network_images_22_06_17_12_38_26_114877.png"/> 
+            <img src="products/network/network_images_22_06_17_12_38_30_117805.png"/> 
+            <img src="products/network/network_images_22_06_17_12_39_55_107342.png"/> 
+            <img src="products/network/network_images_22_06_17_12_38_41_101632.png"/> 
+          
+      </marquee>
+                            </div>
+                            <div class="col-md-2 text-center" style="margin-top: 12px;">
+                                <img src="images/nn.png">
+                                <h4 class="title2">Our Network</h4>
+                                <img src="images/nn.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="vc_row wpb_row vc_row-fluid">
+                <div class="wpb_column vc_column_container vc_col-sm-12">
+                    <div class="vc_column-inner ">
+                        <div class="wpb_wrapper">
+                            <section class="padd-top-30">
+                                <div class="row">
+                                    <div class="container why-choose">
+                                        <h1 class="section-title2 wow zoomIn animated animated" style="visibility: visible; animation-name: zoomIn;"><span>Why Choose Us </span></h1>
+                                        <img src="images/bg-title1.png" class="why-border">
+                                        <div class="padd-30">
+                                            <div class=" col-md-6 delas-item">
+                                                <div class="wpb_wrapper">
+                                                    <div>
+                                                        <div class="listing">
+                                                            <span class="fl-ic flaticon-gardening4">
+                                                                <div class="why">
+                                                                    <img src="images/service.png">
+                                                                </div>
+                                                            </span>
+                                                            <div class="list-content">
+                                                                <h1>Excellent Services</h1>
+                                                                <div>Service is the extent to which a service meets the customer's needs and expectations.</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="listing">
+                                                            <span class="fl-ic flaticon-gardening4">
+                                                                <div class="why">
+                                                                    <img src="images/satis.png">
+                                                                </div>
+                                                            </span>
+                                                            <div class="list-content">
+                                                                <h1>Satisfied Customers</h1>
+                                                                <div>Since the inception of our firm, we are focused towards maintaining the trust.</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" col-md-6 delas-item">
+                                                <div class="wpb_wrapper">
+                                                    <div>
+                                                        <div class="listing">
+                                                            <span class="fl-ic flaticon-gardening4">
+                                                                <div class="why">
+                                                                    <img src="images/phone.png">
+                                                                </div>
+                                                            </span>
+                                                            <div class="list-content">
+                                                                <h1>Competitive Price</h1>
+                                                                <div>Our company’s biggest agenda is to give a competitive price against our competitors.</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="listing">
+                                                            <span class="fl-ic flaticon-gardening4">
+                                                                <div class="why">
+                                                                    <img src="images/qualityy.png">
+                                                                </div>
+                                                            </span>
+                                                            <div class="list-content">
+                                                                <h1>Quality Work</h1>
+                                                                <div>All our organized and sustained efforts are driven towards providing the customers .</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                           <!--  <div class="col-md-4 delas-item hidd wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+                                                <img src="images/girl.png" class="mt-girl">
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--packaging end-->
+        </div>
+
+            <!-- Home  end-->
+
+            <footer id="site-footer">
+                <div class="container">
+                    <div class="top-footer">
+                        <div>
+                            <div class="col-xs-12 col-md-4 col-sm-12 wow fadeInLeft animated animated animated animated" data-wow-duration="0.2s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 0.2s; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                <div class="about-footer-box footer-box">
+                                    <a href="company.html"><i class="fa fa-building" aria-hidden="true"></i></a>
+                                    <div class="footer-box-txt">
+                                        <h6>About us</h6>
+                                        <p>Maxil Agro Industries is world’s renowned Manufacturer <a href="about-us.aspx">Read more..</a> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-4 col-sm-7 wow fadeInLeft animated animated animated animated" data-wow-duration="0.4s" data-wow-delay="0.4s" style="visibility: visible; animation-duration: 0.4s; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                                <div class="address-footer-box footer-box">
+                                    <a href="contact.html"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+                                    <div class="footer-box-txt">
+                                        <h6>Address</h6>
+                                        <p>Nadana Road, Taraori – 132116, District Karnal, Haryana (India)</p>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-4 col-sm-5 wow fadeInLeft animated animated animated animated" data-wow-duration="0.6s" data-wow-delay="0.6s" style="visibility: visible; animation-duration: 0.6s; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                                <div class="contacts-footer-box footer-box">
+                                    <a href="contact.html"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                                    <div class="footer-box-txt">
+                                        <h6>Contacts</h6>
+                                        <p><span>P:</span> +91 8295460011, +91 8295490011</p>
+                                        <p><span>E:</span> maxilagro@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-12">
+                            <div class="line-div"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="row text-center">
+                        <div class="col-md-12">
+                            <div id="text-1" class="widget widget_text">
+                                <div class="social">
+                                    <a target="_blank" href="https://www.facebook.com" class="social__variant fa fa-facebook"></a>
+                                    <a target="_blank" href="https://twitter.com" class="social__variant fa fa-twitter"></a>
+                                    <a target="_blank" href="https://www.linkedin.com" class="social__variant fa fa-linkedin"></a>
+                                    <a href="#" class="social__variant fa fa-google-plus"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-md-3 text-right-mkindia">
+                            <img src="images/make-in-india.png">
+                        </div>
+                        <div class="col-md-6 wow fadeInUp animated animated" style="visibility: visible; animation-name: fadeInUp;">
+                            <div class="bloc-cms">
+                                <div>
+                                    <ul id="menu-information" class="menu">
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="Default.aspx">Home</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="about-us.aspx">About us</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="infrastructure.aspx">Infrastructure</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="products.aspx">Products</a></li>
+                                        
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="contact.aspx">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-copyright" style="text-align: center">
+                                <div id="text-3" class="widget widget_text">
+                                    <span class="foot-title hide">Copyright</span>
+                                    <div class="textwidget">Copyright 2020 &copy; MAXIL. </div>
+                                    <div class="textwidget" style="font-size:10px;">
+                                        Designed By : <a href="http://mdaithub.com" target="_blank">MDA ITHub | TECHNOLOGIES</a>
+                                    </div>
+                                </div>
+                                <img src="images/foo-border.png" class="foo-b">
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-left-sbharat">
+                            <img src="images/swacch-bharat.png">
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </form>
+    
+<script type="text/javascript" src="js1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="dist/build.min.js"></script>
+    <link rel="stylesheet" href="dist/simpleLightbox.min.css"/>
+    <script src="dist/simpleLightbox.min.js"></script>
+    <script>
+        $('.imageGallery1 a').simpleLightbox();
+    </script>
+    <script type='text/javascript' src='wp-content/themes/foodlover/assets/js/egprojets.libce0fce0f.js?ver=20160815'></script>
+    <script type='text/javascript' src='wp-content/themes/foodlover/assets/js/egprojets.customce0fce0f.js?ver=20160815'></script>
+    <script type='text/javascript' src='wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min01470147.js?ver=4.12'></script>
+    <script src="js2/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="js2/vendor/flickity.pkgd.min.js"></script>
+    <script src="js2/vendor/jquery.waypoints.min.js"></script>
+    <script src="js2/vendor/sticky.min.js"></script>
+    <script src="js2/vendor/bootstrap.min.js"></script>
+    <script src="js2/vendor/jquery.nivo.slider.pack.js"></script>
+    <script src="js2/main.js"></script>
+   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js1/pr-tabs.js"></script>
+
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/custom-general.js"></script>
+    <script type="text/javascript" src="js/popup.html"></script>
+    
+    <script>
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            $('.nivoSlider').nivoSlider();
+            $('.about-click').click(function () {
+                $('ul.sub-menu.about-drop').toggleClass('display-flex');
+            });
+
+            $('.product-click').click(function () {
+                $('.drop.dropdown-menu.product-drop').toggleClass('display-flex');
+            });
+
+            $('.infra-click').click(function () {
+                $('ul.sub-menu.infra-drop').toggleClass('display-flex');
+            });
+
+            $('.brand-click').click(function () {
+                $('ul.sub-menu.brand-drop').toggleClass('display-flex');
+            });
+
+
+
+        })
+    </script>
+
+
+</body>
+</html>
